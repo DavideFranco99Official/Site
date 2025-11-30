@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroOriginalText = heroText.getAttribute('data-text');
 
     function randomGlitch() {
-        // Applica/rimuovi una classe "glitch-active" ogni tot secondi
         heroText.classList.toggle('glitch-active');
     }
 
     // Esegue il glitch casuale ad intervalli
-    // L'animazione CSS fa già la maggior parte del lavoro, questo è un piccolo extra
+    // L'animazione CSS fa già la maggior parte del lavoro
     setInterval(randomGlitch, 5000); // Ogni 5 secondi (5000ms)
+
 });
